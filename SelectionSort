@@ -1,0 +1,21 @@
+# Selection Sort
+
+def selection(list):
+
+    for i in range(len(list) - 1):
+
+        min = i
+
+        for j in range(i, len(list)):
+
+            if list[min] > list[j]:
+                min = j
+
+        list[min], list[i] = list[i], list[min]
+
+    return list
+
+
+
+
+print(selection([33,134,43,2,1,4,55,3,1,434]))

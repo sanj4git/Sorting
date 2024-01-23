@@ -1,0 +1,13 @@
+# Bubble Sort
+
+def bubble(list):
+
+    for i in range(len(list) - 1):
+
+        for j in range(len(list) - 1 - i):
+
+            if list[j] > list[j+1]:
+                list[j+1], list[j] = list[j], list[j+1]
+
+    return list
+print(bubble([44,2,11,4,6,7,222,34,5,6]))
